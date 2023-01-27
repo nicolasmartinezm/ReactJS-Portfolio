@@ -1,0 +1,194 @@
+.AboutMe {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  justify-items: center;
+  align-items: center;
+  padding: 190px 0 100px 0;
+}
+.AboutMe .AboutMeHeader {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.AboutMe h1 {
+  font-size: 110px;
+  font-weight: 900;
+  line-height: 71.2%;
+  color: rgba(255, 255, 255, 0.158);
+}
+.AboutMe h2 {
+  font-size: 100px;
+  font-weight: 900;
+  line-height: 71.2%;
+  margin-top: -15px;
+  background-color: white;
+  color: transparent;
+  text-shadow: 0px 3px 3px rgba(255, 255, 255, 0.5);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+}
+.AboutMe p {
+  color: #999999;
+  font-size: 20px;
+  line-height: 24.6px;
+  letter-spacing: 0.6px;
+  padding: 0 0 50px;
+}
+.AboutMeText {
+  padding: 0 10px;
+}
+
+.AboutMeText a {
+  font-size: 18px;
+  font-weight: 600;
+  background-color: #5dc8db;
+  padding: 15px 32px;
+  text-decoration: none;
+  border: 2px solid #5dc8db;
+  border-radius: 5px;
+  transition: 0.1s ease-in;
+}
+.AboutMeText a:hover {
+  font-size: 18px;
+  font-weight: 600;
+  color: #5dc8db;
+  background-color: black;
+  padding: 15px 32px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+.github {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.githubTitle {
+  padding-bottom: 50px;
+  font-size: 37px;
+  text-align: center;
+  font-weight: 900;
+  background: rgb(37, 84, 135);
+  background: linear-gradient(
+    90deg,
+    rgba(37, 84, 135, 1) 0%,
+    rgba(93, 200, 219, 1) 20%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.githubPic img {
+  width: 85vw;
+  max-width: 900px;
+  border-radius: 32px;
+  transition: all 0.25s ease-in;
+}
+.githubPic img:hover {
+  transform: scale(1.1);
+}
+img.imageMobile {
+  display: none;
+  width: 85vw;
+  max-width: 410px;
+}
+.githubPic a {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.githubPic a::before,
+.githubPic a::after {
+  content: "";
+  display: inline-block;
+  height: 215px;
+  width: 4px;
+  background-color: #5dc8db;
+  border-radius: 15px;
+}
+
+@media (max-width: 1095px) {
+  .AboutMe {
+    grid-template-columns: 1fr;
+    grid-gap: 70px;
+  }
+  .AboutMeText {
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (max-width: 775px) {
+  img.imageMobile {
+    display: block;
+  }
+  .imageDesktop {
+    display: none;
+  }
+  .github {
+    align-items: center;
+  }
+  .githubPic a::before,
+  .githubPic a::after {
+    display: none;
+  }
+}
+@media (max-width: 535px) {
+  .AboutMe {
+    grid-template-columns: 1fr;
+    grid-gap: 70px;
+  }
+  .AboutMeText {
+    max-width: 520px;
+  }
+  .AboutMe h1 {
+    font-size: 90px;
+  }
+  .AboutMe h2 {
+    font-size: 80px;
+    margin-top: -15px;
+  }
+  .AboutMe p {
+    color: #999999;
+    font-size: 20px;
+    line-height: 24.6px;
+    letter-spacing: 0.6px;
+    padding: 0 0 50px;
+  }
+}
+@media (max-width: 442px) {
+  .AboutMe h1 {
+    font-size: 80px;
+  }
+  .AboutMe h2 {
+    font-size: 70px;
+    margin-top: -15px;
+  }
+  .AboutMe p {
+    font-size: 19px;
+    line-height: 24.6px;
+    padding: 0 0 35px 0;
+  }
+  .githubTitle {
+    padding-bottom: 30px;
+    font-size: 30px;
+  }
+}
+@media (max-width: 397px) {
+  .AboutMe h1 {
+    font-size: 70px;
+  }
+  .AboutMe h2 {
+    font-size: 65px;
+    margin-top: -10px;
+  }
+  .AboutMe p {
+    font-size: 17px;
+  }
+}

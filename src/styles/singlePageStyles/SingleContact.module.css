@@ -1,0 +1,138 @@
+section.ContactMeSection {
+  padding: 60px 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 50px;
+  align-items: center;
+  justify-content: center;
+}
+.ContactMeSection .leftSide {
+  display: grid;
+  grid-template-columns: auto;
+  align-content: center;
+  place-items: center;
+}
+.ContactMeSection .leftSide img {
+  width: 100%;
+  max-width: 313px;
+}
+.ContactMeSection .leftSide h2 {
+  font-size: 42px;
+  font-weight: 600;
+  text-align: center;
+  background-color: white;
+  color: transparent;
+  text-shadow: 0px 3px 3px rgba(255, 255, 255, 0.5);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+}
+.ContactMeSection form {
+  max-width: 500px;
+  padding: 20px 30px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 23px;
+  border-radius: 15px;
+  border: 3px solid rgba(255, 255, 255, 0.194);
+}
+.ContactMeSection form h1 {
+  font-size: 64px;
+  font-weight: 900;
+  line-height: 0.8em;
+  background-color: white;
+  color: transparent;
+  text-shadow: 0px 3px 3px rgba(255, 255, 255, 0.5);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+}
+.ContactMeSection form input,
+.ContactMeSection form textarea {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 30px;
+  color: black;
+  font-size: 18px;
+  font-weight: 600;
+}
+.ContactMeSection form .sendBtn {
+  background: rgb(37, 84, 135);
+  background: linear-gradient(
+    90deg,
+    rgba(37, 84, 135, 1) 0%,
+    rgba(93, 200, 219, 1) 70%
+  );
+  color: white;
+  font-weight: 700;
+  font-size: 23px;
+  border-width: 5px;
+  border-style: solid;
+  border-image: linear-gradient(
+      90deg,
+      rgba(37, 84, 135, 1) 0%,
+      rgba(93, 200, 219, 1) 70%
+    )
+    1;
+
+  transition: 0.1s all ease-in;
+  letter-spacing: 2px;
+  box-sizing: border-box;
+  border-radius: 0;
+}
+.ContactMeSection form .sendBtn:hover {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 70%);
+
+  color: white;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+.ContactMeSection form .messageSent {
+  border-radius: 15px;
+  background-color: black;
+  margin-top: -15px;
+  color: BLACK;
+  font-weight: 600;
+  font-size: 20px;
+  text-align: center;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 890px) {
+  section.ContactMeSection {
+    padding: 60px 25px;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 30px;
+  }
+  .ContactMeSection .leftSide img {
+    max-width: 200px;
+  }
+  .ContactMeSection .leftSide h2 {
+    font-size: 25px;
+  }
+}
+@media (max-width: 605px) {
+  section.ContactMeSection {
+    padding: 60px 15px;
+    grid-template-columns: 1fr;
+  }
+  .ContactMeSection .leftSide {
+    display: none;
+  }
+  .ContactMeSection form {
+    padding: 20px 15px;
+    grid-gap: 23px;
+  }
+  .ContactMeSection form input,
+  .ContactMeSection form textarea {
+    padding: 10px 15px;
+    border-radius: 10px;
+    font-size: 17px;
+  }
+}
+@media (max-width: 379px) {
+  .ContactMeSection form h1 {
+    font-size: 50px;
+  }
+}

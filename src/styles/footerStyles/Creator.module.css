@@ -1,0 +1,27 @@
+section.Creator {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2px 0;
+  border-top: 0.5px solid grey;
+}
+.Creator p,
+.Creator .footerLink {
+  font-size: 20px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.505);
+  font-weight: 300;
+}
+.Creator .footerLink {
+  font-weight: 600;
+}
+.Creator .footerLink:hover {
+  color: #5dc8db;
+}
+@media (max-width: 650px) {
+  .Creator p,
+  .Creator .footerLink {
+    font-size: 14px;
+  }
+}

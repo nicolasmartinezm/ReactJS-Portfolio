@@ -1,0 +1,139 @@
+.getInTouch {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 250px 45px 150px 45px;
+}
+.getInTouch p {
+  font-size: 150px;
+  font-weight: 900;
+  line-height: 80%;
+  background-color: white;
+  color: transparent;
+  text-shadow: 0px 3px 3px rgba(255, 255, 255, 0.5);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+}
+.getInTouch a {
+  font-size: 35px;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 19px 32px;
+  border: 2px solid #5dc8db;
+  transition: all 0.1s ease-in;
+  margin-left: 5px;
+  background-color: black;
+  text-align: center;
+}
+.getInTouch a:hover {
+  background-color: #5dc8db;
+}
+
+.arrow1 {
+  animation: slide1 2s ease-in-out infinite;
+  z-index: 10;
+  width: 150px;
+  color: #5dc8db;
+}
+
+@keyframes slide1 {
+  0% {
+    transform: translate(-100px, 0);
+  }
+
+  100% {
+    transform: translate(-100px, 0);
+  }
+
+  50% {
+    transform: translate(100px, 0);
+  }
+}
+@media (max-width: 1200px) {
+  @keyframes slide1 {
+    0% {
+      transform: translate(-70px, 0);
+    }
+
+    100% {
+      transform: translate(-70px, 0);
+    }
+
+    50% {
+      transform: translate(70px, 0);
+    }
+  }
+}
+@media (max-width: 1065px) {
+  .getInTouch p {
+    font-size: 120px;
+    line-height: 80%;
+  }
+  .getInTouch a {
+    font-size: 28px;
+    padding: 15px 30px;
+    margin-left: 5px;
+  }
+  @keyframes slide1 {
+    0% {
+      transform: translate(-40px, 0);
+    }
+
+    100% {
+      transform: translate(-40px, 0);
+    }
+
+    50% {
+      transform: translate(40px, 0);
+    }
+  }
+}
+@media (max-width: 920px) {
+  .getInTouch p {
+    font-size: 100px;
+    line-height: 80%;
+  }
+  .getInTouch a {
+    font-size: 25px;
+    padding: 13px 28px;
+    margin-left: 5px;
+  }
+  @keyframes slide1 {
+    0% {
+      transform: translate(-20px, 0);
+    }
+
+    100% {
+      transform: translate(-20px, 0);
+    }
+
+    50% {
+      transform: translate(20px, 0);
+    }
+  }
+}
+@media (max-width: 825px) {
+  .getInTouch {
+    display: grid;
+    grid-template-columns: auto;
+    justify-items: center;
+    align-content: center;
+    grid-gap: 0px;
+    padding: 200px 45px;
+  }
+  .getInTouch p {
+    font-size: 80px;
+    line-height: 80%;
+  }
+  .getInTouch a {
+    font-size: 23px;
+    padding: 15px 30px;
+    margin-left: 0px;
+  }
+  .arrow1 {
+    animation: none;
+    transform: rotate(90deg);
+    width: 100px;
+  }
+}

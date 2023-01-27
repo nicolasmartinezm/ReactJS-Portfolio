@@ -1,0 +1,175 @@
+section.Skillset {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 250px 0 80px 0;
+  width: 100%;
+}
+.Skillset .SkillsetHeader {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  padding-bottom: 100px;
+}
+.SkillsetHeader h1 {
+  font-size: 120px;
+  font-weight: 900;
+  line-height: 71.2%;
+  color: rgba(255, 255, 255, 0.158);
+}
+
+.SkillsetHeader h2 {
+  font-size: 80px;
+  font-weight: 900;
+  line-height: 71.2%;
+  margin-top: -15px;
+  background-color: white;
+  color: transparent;
+  text-shadow: 0px 3px 3px rgba(255, 255, 255, 0.5);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+}
+.SkillsMobile {
+  display: none;
+  color: white;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+.Skills {
+  color: white;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.Skills p,
+.SkillsMobile p {
+  font-size: 55px;
+  text-align: center;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+  margin-top: -25px;
+
+  background: radial-gradient(hsl(189, 64%, 61%), hsl(211, 57%, 34%)) fixed;
+  background: conic-gradient(
+      hsl(211, 57%, 34%),
+      hsl(189, 67%, 77%) hsl(211, 57%, 34%)
+    )
+    fixed;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 1150px) {
+  .SkillsetHeader h1 {
+    font-size: 100px;
+  }
+
+  .SkillsetHeader h2 {
+    font-size: 80px;
+    margin-top: -15px;
+  }
+}
+@media (max-width: 975px) {
+  .SkillsetHeader h1 {
+    font-size: 80px;
+  }
+
+  .SkillsetHeader h2 {
+    font-size: 80px;
+    margin-top: -10px;
+  }
+}
+@media (max-width: 935px) {
+  .Skills p,
+  .SkillsMobile p {
+    font-size: 40px;
+    margin-top: -17px;
+  }
+}
+@media (max-width: 755px) {
+  .SkillsetHeader h1 {
+    font-size: 60px;
+  }
+
+  .SkillsetHeader h2 {
+    font-size: 60px;
+    margin-top: -5px;
+  }
+}
+@media (max-width: 665px) {
+  .Skills p,
+  .SkillsMobile p {
+    font-size: 30px;
+    margin-top: -10px;
+  }
+}
+@media (max-width: 578px) {
+  .SkillsetHeader h1 {
+    font-size: 45px;
+  }
+
+  .SkillsetHeader h2 {
+    font-size: 70px;
+    margin-top: -3px;
+  }
+}
+@media (max-width: 522px) {
+  .Skills p,
+  .SkillsMobile p {
+    font-size: 27px;
+    margin-top: -5px;
+  }
+}
+@media (max-width: 500px) {
+  .SkillsetHeader h1 {
+    font-size: 35px;
+  }
+
+  .SkillsetHeader h2 {
+    font-size: 50px;
+    margin-top: -3px;
+  }
+}
+@media (max-width: 483px) {
+  .SkillsMobile p {
+    font-size: 35px;
+    margin-top: -7px;
+  }
+  .Skills {
+    display: none;
+  }
+  .SkillsMobile {
+    display: flex;
+  }
+}
+@media (max-width: 420px) {
+  .SkillsetHeader h1 {
+    font-size: 40px;
+  }
+
+  .SkillsetHeader h2 {
+    font-size: 62px;
+    margin-top: 0;
+  }
+  .SkillsMobile p {
+    font-size: 30px;
+  }
+}
+@media (max-width: 370px) {
+  .SkillsMobile p {
+    font-size: 30px;
+    margin-top: -7px;
+  }
+}

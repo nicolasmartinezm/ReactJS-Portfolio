@@ -1,0 +1,164 @@
+.Projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 300px 0 30px 0;
+}
+.Projects .ProjectsHeader {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  padding-bottom: 60px;
+}
+.Projects .ProjectsHeader h1 {
+  font-size: 170px;
+  font-weight: 900;
+  line-height: 71.2%;
+  color: rgba(255, 255, 255, 0.158);
+}
+.Projects .ProjectsHeader h2 {
+  font-size: 100px;
+  font-weight: 900;
+  margin-top: -70px;
+  background-color: white;
+  color: transparent;
+  text-shadow: 0px 3px 3px rgba(255, 255, 255, 0.5);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+}
+.Projects .ProjectsGroup {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(410px, auto));
+  grid-gap: 40px;
+  width: 100%;
+  padding: 0 100px;
+}
+.Projects .ProjectsGroup .project {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 30px;
+}
+.Projects .ProjectsGroup .project img {
+  width: 100%;
+}
+.Projects .ProjectsGroup .project h1 {
+  font-size: 30px;
+}
+.Projects .ProjectsGroup .project h2 {
+  font-size: 17px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.344);
+  padding: 0;
+  margin-bottom: 30px;
+}
+.Projects .ProjectsGroup .project a {
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+  text-decoration: none;
+  color: white;
+  padding: 12px 30px;
+  border: 4px solid #5dc8db;
+  transition: all 0.1s ease-in;
+}
+.Projects .ProjectsGroup .project a:hover {
+  background-color: #5dc8db;
+  border: 4px solid #5dc8db;
+}
+.Projects .seeMore {
+  text-decoration: none;
+  background-color: #5dc8db;
+  padding: 12px 30px;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+  margin-top: 30px;
+  border: 4px solid #5dc8db;
+  transition: all 0.1s ease-in;
+}
+.Projects .seeMore:hover {
+  background-color: black;
+}
+/* MEDIA QUERIES */
+@media (max-width: 1070px) {
+  .Projects .ProjectsHeader h1 {
+    font-size: 162px;
+  }
+  .Projects .ProjectsHeader h2 {
+    font-size: 95px;
+    margin-top: -55px;
+  }
+}
+@media (max-width: 1014px) {
+  .Projects .ProjectsGroup {
+    grid-template-columns: repeat(auto-fit, minmax(350px, auto));
+  }
+}
+@media (max-width: 900px) {
+  .Projects .ProjectsHeader h1 {
+    font-size: 142px;
+  }
+  .Projects .ProjectsHeader h2 {
+    font-size: 75px;
+    margin-top: -45px;
+  }
+}
+@media (max-width: 730px) {
+  .Projects .ProjectsHeader h1 {
+    font-size: 122px;
+  }
+  .Projects .ProjectsHeader h2 {
+    font-size: 65px;
+    margin-top: -35px;
+  }
+}
+@media (max-width: 650px) {
+  .Projects .ProjectsHeader h1 {
+    font-size: 102px;
+  }
+  .Projects .ProjectsHeader h2 {
+    font-size: 55px;
+    margin-top: -30px;
+  }
+}
+@media (max-width: 555px) {
+  .Projects .ProjectsHeader h1 {
+    font-size: 82px;
+  }
+  .Projects .ProjectsHeader h2 {
+    font-size: 45px;
+    margin-top: -25px;
+  }
+  .Projects .ProjectsGroup {
+    grid-template-columns: repeat(auto-fit, minmax(310px, auto));
+    padding: 0;
+  }
+  .Projects .ProjectsGroup .project h1 {
+    font-size: 30px;
+  }
+  .Projects .ProjectsGroup .project h2 {
+    font-size: 17px;
+  }
+  .Projects .ProjectsGroup .project {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (max-width: 420px) {
+  .Projects .ProjectsHeader h1 {
+    font-size: 70px;
+  }
+  .Projects .ProjectsHeader h2 {
+    text-align: center;
+    font-size: 80px;
+    line-height: 60px;
+    margin-top: -5px;
+    text-shadow: 0px 1px 3px rgba(255, 255, 255, 0.5);
+  }
+}

@@ -1,0 +1,24 @@
+* {
+  color: white;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  background-color: black;
+}
+.website {
+  padding: 0 45px;
+
+  width: 100%;
+  margin: auto;
+}
+html {
+  scroll-behavior: smooth;
+}
+@media (max-width: 850px) {
+  .website {
+    padding: 0 20px;
+  }
+}
