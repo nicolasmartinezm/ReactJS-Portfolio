@@ -19,7 +19,7 @@ export default function AboutMe() {
             knowledge through <span>online courses and certificates</span>,
             <span> creating websites, </span>
             and working mainly with <span>Javascript</span>,{" "}
-            <span>ReactJS</span>, <span>CSS/HTML</span> and{" "}
+            <span>React JS</span>, <span>CSS/HTML</span> and{" "}
             <span>WordPress</span>. <br></br>
             <br></br>I'm currently <span>based in Brisbane QLD, Australia</span>{" "}
             working on projects and keeping my learning up to date.
