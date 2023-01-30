@@ -1,8 +1,8 @@
 import classes from "../../styles/homePageStyles/Projects.module.css";
-import JMCF from "../../gifs/JMCF.webp";
-import indeedLayout from "../../gifs/indeed.webp";
-import cimicWebsite from "../../gifs/cimicWebsite.webp";
-import googleLayout from "../../gifs/googleLayout.webp";
+import JMCF from "../../gifs/JMCF.png";
+import indeedLayout from "../../gifs/indeed.png";
+import cimicWebsite from "../../gifs/cimicWebsite.png";
+import googleLayout from "../../gifs/googleLayout.png";
 import { Link } from "react-router-dom";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 

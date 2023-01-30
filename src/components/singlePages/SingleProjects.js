@@ -1,19 +1,19 @@
 import classes from "../../styles/singlePageStyles/SingleProjects.module.css";
-import bootstrap from "../../gifs/bootstrap.webp";
-import clickOutside from "../../gifs/clickOutside.webp";
-import clock from "../../gifs/clock.webp";
-import cssVariables from "../../gifs/cssVariables.webp";
-import drumKit from "../../gifs/drumKit.webp";
-import etchsketch from "../../gifs/etch-sketch.webp";
-import flexGallery from "../../gifs/flexGallery.webp";
-import googleLayout from "../../gifs/googleLayout.webp";
-import indeed from "../../gifs/indeed.webp";
-import JMCF from "../../gifs/JMCF.webp";
-import ourbmx from "../../gifs/ourbmx.webp";
-import spotify from "../../gifs/spotify.webp";
-import tabs from "../../gifs/tabs.webp";
-import tomorrowBank from "../../gifs/tomorrowBank.webp";
-import cimicWebsite from "../../gifs/cimicWebsite.webp";
+import bootstrap from "../../gifs/bootstrap.png";
+import clickOutside from "../../gifs/clickOutside.png";
+import clock from "../../gifs/clock.png";
+import cssVariables from "../../gifs/cssVariables.png";
+import drumKit from "../../gifs/drumKit.png";
+import etchsketch from "../../gifs/etch-sketch.png";
+import flexGallery from "../../gifs/flexGallery.png";
+import googleLayout from "../../gifs/googleLayout.png";
+import indeed from "../../gifs/indeed.png";
+import JMCF from "../../gifs/JMCF.png";
+import ourbmx from "../../gifs/ourbmx.png";
+import spotify from "../../gifs/spotify.png";
+import tabs from "../../gifs/tabs.png";
+import tomorrowBank from "../../gifs/tomorrowBank.png";
+import cimicWebsite from "../../gifs/cimicWebsite.png";
 
 export default function SingleProjects() {
   return (

@@ -1,7 +1,7 @@
 import classes from "../../styles/homePageStyles/AboutMe.module.css";
 import { Link } from "react-router-dom";
-import githubPic from "../../imgs/github.webp";
-import githubMobile from "../../imgs/githubMobile.webp";
+import githubPic from "../../imgs/github.png";
+import githubMobile from "../../imgs/githubMobile.png";
 export default function AboutMe() {
   return (
     <>
