@@ -49,7 +49,7 @@ export default function SingleProjects() {
           <div className={classes.project}>
             <img
               src={cimicWebsite}
-              alt="Cimic Wordpress Website"
+              alt="Cimic Wordpress WebsiteEE"
               width="100%"
             />
             <h1>Wordpress Live Website</h1>
