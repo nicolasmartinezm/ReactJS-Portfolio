@@ -4,7 +4,6 @@ import indeedLayout from "../../gifs/indeed.png";
 import cimicWebsite from "../../gifs/cimicWebsite.png";
 import googleLayout from "../../gifs/googleLayout.png";
 import { Link } from "react-router-dom";
-import { AnimationOnScroll } from "react-animation-on-scroll";
 
 export default function Projects() {
   return (
