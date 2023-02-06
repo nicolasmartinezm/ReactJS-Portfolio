@@ -1,4 +1,3 @@
-import classes from "../../styles/singlePageStyles/SingleProjects.module.css";
 import bootstrap from "../../gifs/bootstrap.png";
 import clickOutside from "../../gifs/clickOutside.png";
 import clock from "../../gifs/clock.png";
@@ -14,13 +13,139 @@ import spotify from "../../gifs/spotify.png";
 import tabs from "../../gifs/tabs.png";
 import tomorrowBank from "../../gifs/tomorrowBank.png";
 import cimicWebsite from "../../gifs/cimicWebsite.png";
+import classes from "../../styles/singlePageStyles/SingleProjects.module.css";
+import Project from "./Project";
 
 export default function SingleProjects() {
+
+  const projects = [
+    {
+        title:'Wordpress Live Website',
+        imgSource: {cimicWebsite},
+        alt: 'Cimic Wordpress Website',
+        tags:'WORDPRESS - PHP - ELEMENTOR - CSS',
+        href:'https://www.cimic.cl/',
+        isLive: true,
+     },
+     {
+        title:'Our BMX Website Layout',
+        imgSource: {ourbmx},
+        alt: 'Our BMX layout',
+        tags:'CSS - HTML',
+        href:'https://github.com/nicolasmartinezm/Website-BmxBlog',
+        isLive: false,
+     },
+     {
+        title:'Google Website Layout',
+        imgSource: {googleLayout},
+        alt: 'Google Layout',
+        tags:'JAVASCRIPT - CSS - HTML',
+        href:'https://github.com/nicolasmartinezm/GoogleSearch-LAYOUT',
+        isLive: false,
+     },
+     {
+        title:'Drum Kit Sound - Game',
+        imgSource: {drumKit},
+        alt: 'Drumkit app',
+        tags:'JAVASCRIPT - CSS - HTML',
+        href:'https://github.com/nicolasmartinezm/JS-DrumKit',
+        isLive: false,
+     },
+     {
+        title:'Tomorrow Bank Website Layout',
+        imgSource: {tomorrowBank},
+        alt: 'Tomorrow Bank Layout',
+        tags:'CSS - HTML',
+        href:'https://github.com/nicolasmartinezm/Website-MobileBanking',
+        isLive: false,
+     },
+     {
+        title:'Indeed Website Layout',
+        imgSource: {indeed},
+        alt: 'Indeed Layout',
+        tags:'JAVASCRIPT - CSS - HTML',
+        href:'https://github.com/nicolasmartinezm/indeed',
+        isLive: false,
+     },
+     {
+        title:'JMCF CONSTRUCTION - React Website',
+        imgSource: {JMCF},
+        alt: 'Jmcf website Layout',
+        tags:'REACT JS - JAVASCRIPT - CSS - HTML',
+        href:'https://jmcfconstruction.com/',
+        isLive: true,
+     },
+     {
+        title:'Bootstrap Website Layout',
+        imgSource: {bootstrap},
+        alt: 'Bootstrap Website Layout',
+        tags:'BOOTSTRAP - CSS - HTML',
+        href:'https://github.com/nicolasmartinezm/Bootstrap-Practicing',
+        isLive: false,
+     },
+     {
+        title:'Spotify App Layout',
+        imgSource: {spotify},
+        alt: 'Spotify App Layout',
+        tags:'CSS - HTML',
+        href:'https://github.com/nicolasmartinezm/spotifyApp-Layout',
+        isLive: false,
+     },
+     {
+        title:'Flex Gallery Panel',
+        imgSource: {flexGallery},
+        alt: 'Flex Gallery Panel Layout',
+        tags:'CSS - HTML',
+        href:'https://github.com/nicolasmartinezm/JS-CSS-FlexPanels',
+        isLive: false,
+     },
+     {
+        title:'Etch a Sketch',
+        imgSource: {etchsketch},
+        alt: 'Etch a Sketch',
+        tags:'JAVASCRIPT - CSS - HTML',
+        href:'https://github.com/nicolasmartinezm/JS-etch-a-sketch',
+        isLive: false,
+     },
+     {
+        title:'JS Clock',
+        imgSource: {clock},
+        alt: 'Javascript clock',
+        tags:'JAVASCRIPT - CSS - HTML',
+        href:'https://github.com/nicolasmartinezm/JS-CSS-CLOCK',
+        isLive: false,
+     },
+     {
+        title:'Javascript Tabs',
+        imgSource: {tabs},
+        alt: 'Javascript Tabs',
+        tags:'CSS - HTML',
+        href:'https://github.com/nicolasmartinezm/JS-Tabs',
+        isLive: false,
+     },
+     {
+        title:'JS Modals',
+        imgSource: {clickOutside},
+        alt: 'JS Modals',
+        tags:'JAVASCRIPT - CSS - HTML',
+        href:'https://github.com/nicolasmartinezm/JS-Modal-clickOutside',
+        isLive: false,
+     },
+     {
+        title:'Updating CSS Variables',
+        imgSource: {cssVariables},
+        alt: 'CSS Variables',
+        tags:'CSS - HTML',
+        href:'https://github.com/nicolasmartinezm/JS-PlayingWithCssVariables',
+        isLive: false,
+     },
+]
+
   return (
     <>
-      <section class={classes.projectsSection} id="projects">
+      <section className={classes.projectsSection} id="projects">
         <div className={classes.projects}>
-          <div class={classes.sectionHeading}>
+          <div className={classes.sectionHeading}>
             <h5 className={classes.doneHomework}>
               I'VE DONE
               <br />
@@ -30,7 +155,7 @@ export default function SingleProjects() {
               CHECK SOME OF <br></br> MY PROJECTS!
             </h4>
           </div>
-          <div class={classes.sectionText} id="projectText">
+          <div className={classes.sectionText} id="projectText">
             <p>
               The best way to learn is with the hands on deck. <br></br>
               <br></br>I'm a strong believer that practice is what makes
@@ -46,192 +171,9 @@ export default function SingleProjects() {
           </div>
         </div>
         <div className={classes.ProjectsGroup}>
-          <div className={classes.project}>
-            <img
-              src={cimicWebsite}
-              alt="Cimic Wordpress Website"
-              width="100%"
-            />
-            <h1>Wordpress Live WebsiteEEEEEEAAAA</h1>
-            <h2>WORDPRESS - PHP - ELEMENTOR - CSS</h2>
-            <a
-              href="https://www.cimic.cl/"
-              target="_blank"
-              rel="noreferrer"
-              alt="react"
-            >
-              GO TO LIVE WEBSITE
-            </a>
-          </div>
-          <div className={classes.project}>
-            <img src={ourbmx} alt="Our BMX layout" width="100%" />
-            <h1>Our BMX Website Layout</h1>
-            <h2>CSS - HTML</h2>
-            <a
-              href="https://github.com/nicolasmartinezm/Website-BmxBlog"
-              target="_blank"
-              rel="noreferrer"
-              alt="our bmx website layout"
-            >
-              CHECK THE CODES
-            </a>
-          </div>
-          <div className={classes.project}>
-            <img src={googleLayout} alt="Google Layout" width="100%" />
-            <h1>Google Website Layout</h1>
-            <h2>JAVASCRIPT - CSS - HTML</h2>
-            <a
-              href="https://github.com/nicolasmartinezm/GoogleSearch-LAYOUT"
-              target="_blank"
-              rel="noreferrer"
-            >
-              CHECK THE CODES
-            </a>
-          </div>
-          <div className={classes.project}>
-            <img src={drumKit} alt="Drumkit" width="100%" />
-            <h1>Drum Kit Sound - Game</h1>
-            <h2>JAVASCRIPT - CSS - HTML</h2>
-            <a
-              href="https://github.com/nicolasmartinezm/JS-DrumKit"
-              target="_blank"
-              rel="noreferrer"
-            >
-              CHECK THE CODES
-            </a>
-          </div>
-          <div className={classes.project}>
-            <img src={tomorrowBank} alt="Tomorrow Bank Layout" width="100%" />
-            <h1>Tomorrow Bank Website Layout</h1>
-            <h2>CSS - HTML</h2>
-            <a
-              href="https://github.com/nicolasmartinezm/Website-MobileBanking"
-              target="_blank"
-              rel="noreferrer"
-            >
-              CHECK THE CODES
-            </a>
-          </div>
-          <div className={classes.project}>
-            <img src={indeed} alt="Indeed Layout" width="100%" />
-            <h1>Indeed Website Layout</h1>
-            <h2>JAVASCRIPT - CSS - HTML</h2>
-            <a
-              href="https://github.com/nicolasmartinezm/indeed"
-              target="_blank"
-              rel="noreferrer"
-            >
-              CHECK THE CODES
-            </a>
-          </div>
-          <div className={classes.project}>
-            <img src={JMCF} alt="Jmcf website Layout" width="100%" />
-            <h1>JMCF CONSTRUCTION - React Website </h1>
-            <h2>REACT JS - JAVASCRIPT - CSS - HTML</h2>
-            <a
-              href="https://jmcfconstruction.com/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              GO TO LIVE WEBSITE
-            </a>
-          </div>
-          <div className={classes.project}>
-            <img src={bootstrap} alt="Bootstrap Website Layout" width="100%" />
-            <h1>Bootstrap Website Layout</h1>
-            <h2>BOOTSTRAP - CSS - HTML</h2>
-            <a
-              href="https://github.com/nicolasmartinezm/Bootstrap-Practicing"
-              target="_blank"
-              rel="noreferrer"
-            >
-              CHECK THE CODES
-            </a>
-          </div>
-          <div className={classes.project}>
-            <img src={spotify} alt="Spotify Layout" width="100%" />
-            <h1>Spotify App Layout</h1>
-            <h2>CSS - HTML</h2>
-            <a
-              href="https://github.com/nicolasmartinezm/spotifyApp-Layout"
-              target="_blank"
-              rel="noreferrer"
-            >
-              CHECK THE CODES
-            </a>
-          </div>
-          <div className={classes.project}>
-            <img src={flexGallery} alt="Flex Gallery Layout" width="100%" />
-            <h1>Flex Gallery Panel</h1>
-            <h2>CSS - HTML</h2>
-            <a
-              href="https://github.com/nicolasmartinezm/JS-CSS-FlexPanels"
-              target="_blank"
-              rel="noreferrer"
-            >
-              CHECK THE CODES
-            </a>
-          </div>
-          <div className={classes.project}>
-            <img src={etchsketch} alt="Etch a sketch" width="100%" />
-            <h1>Etch a Sketch</h1>
-            <h2>JAVASCRIPT - CSS - HTML</h2>
-            <a
-              href="https://github.com/nicolasmartinezm/JS-etch-a-sketch"
-              target="_blank"
-              rel="noreferrer"
-            >
-              CHECK THE CODES
-            </a>
-          </div>
-          <div className={classes.project}>
-            <img src={clock} alt="Javascript clock" width="100%" />
-            <h1>JS Clock</h1>
-            <h2>JAVASCRIPT - CSS - HTML</h2>
-            <a
-              href="https://github.com/nicolasmartinezm/JS-CSS-CLOCK"
-              target="_blank"
-              rel="noreferrer"
-            >
-              CHECK THE CODES
-            </a>
-          </div>
-          <div className={classes.project}>
-            <img src={tabs} alt="Tabs" width="100%" />
-            <h1>Javascript Tabs</h1>
-            <h2>CSS - HTML</h2>
-            <a
-              href="https://github.com/nicolasmartinezm/JS-Tabs"
-              target="_blank"
-              rel="noreferrer"
-            >
-              CHECK THE CODES
-            </a>
-          </div>
-          <div className={classes.project}>
-            <img src={clickOutside} alt="Click outside" width="100%" />
-            <h1>JS Modals</h1>
-            <h2>JAVASCRIPT - CSS - HTML</h2>
-            <a
-              href="https://github.com/nicolasmartinezm/JS-Modal-clickOutside"
-              target="_blank"
-              rel="noreferrer"
-            >
-              CHECK THE CODES
-            </a>
-          </div>
-          <div className={classes.project}>
-            <img src={cssVariables} alt="CSS Variables" width="100%" />
-            <h1>Updating CSS Variables</h1>
-            <h2>CSS - HTML</h2>
-            <a
-              href="https://github.com/nicolasmartinezm/JS-PlayingWithCssVariables"
-              target="_blank"
-              rel="noreferrer"
-            >
-              CHECK THE CODES
-            </a>
-          </div>
+        {projects.map((project)=>{
+            return <Project data={projects} key={project.title} title={project.title} imgSource={project.imgSource} alt={project.alt} tags={project.tags} href={project.href} isLive={project.isLive} />
+        })}
         </div>
       </section>
     </>
