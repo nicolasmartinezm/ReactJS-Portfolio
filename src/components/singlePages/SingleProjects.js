@@ -13,6 +13,7 @@ import spotify from "../../gifs/spotify.png";
 import tabs from "../../gifs/tabs.png";
 import tomorrowBank from "../../gifs/tomorrowBank.png";
 import cimicWebsite from "../../gifs/cimicWebsite.png";
+import expensesApp from "../../gifs/expensesApp.png";
 import classes from "../../styles/singlePageStyles/SingleProjects.module.css";
 import Project from "./Project";
 
@@ -44,13 +45,14 @@ export default function SingleProjects() {
         isLive: false,
      },
      {
-        title:'Drum Kit Sound - Game',
-        imgSource: {drumKit},
-        alt: 'Drumkit app',
+        title:'Indeed Website Layout',
+        imgSource: {indeed},
+        alt: 'Indeed Layout',
         tags:'JAVASCRIPT - CSS - HTML',
-        href:'https://github.com/nicolasmartinezm/JS-DrumKit',
+        href:'https://github.com/nicolasmartinezm/indeed',
         isLive: false,
      },
+     
      {
         title:'Tomorrow Bank Website Layout',
         imgSource: {tomorrowBank},
@@ -60,21 +62,22 @@ export default function SingleProjects() {
         isLive: false,
      },
      {
-        title:'Indeed Website Layout',
-        imgSource: {indeed},
-        alt: 'Indeed Layout',
-        tags:'JAVASCRIPT - CSS - HTML',
-        href:'https://github.com/nicolasmartinezm/indeed',
-        isLive: false,
-     },
-     {
-        title:'JMCF CONSTRUCTION - React Website',
+        title:'JMCF Construction - React.JS Website',
         imgSource: {JMCF},
         alt: 'Jmcf website Layout',
         tags:'REACT JS - JAVASCRIPT - CSS - HTML',
         href:'https://jmcfconstruction.com/',
         isLive: true,
      },
+     {
+      title:'Practicing React.JS - Expenses App',
+      imgSource: {expensesApp},
+      alt: 'Expenses React App',
+      tags:'REACT JS - JAVASCRIPT - CSS - HTML',
+      href:'https://github.com/nicolasmartinezm/react-practice-expenses',
+      isLive: false,
+   },
+     
      {
         title:'Bootstrap Website Layout',
         imgSource: {bootstrap},
@@ -89,6 +92,14 @@ export default function SingleProjects() {
         alt: 'Spotify App Layout',
         tags:'CSS - HTML',
         href:'https://github.com/nicolasmartinezm/spotifyApp-Layout',
+        isLive: false,
+     },
+     {
+        title:'Drum Kit Sound - Game',
+        imgSource: {drumKit},
+        alt: 'Drumkit app',
+        tags:'JAVASCRIPT - CSS - HTML',
+        href:'https://github.com/nicolasmartinezm/JS-DrumKit',
         isLive: false,
      },
      {
@@ -108,7 +119,7 @@ export default function SingleProjects() {
         isLive: false,
      },
      {
-        title:'JS Clock',
+        title:'JavaScript Clock',
         imgSource: {clock},
         alt: 'Javascript clock',
         tags:'JAVASCRIPT - CSS - HTML',
@@ -124,7 +135,7 @@ export default function SingleProjects() {
         isLive: false,
      },
      {
-        title:'JS Modals',
+        title:'JavaScript Modals',
         imgSource: {clickOutside},
         alt: 'JS Modals',
         tags:'JAVASCRIPT - CSS - HTML',

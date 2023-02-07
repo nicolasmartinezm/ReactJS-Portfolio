@@ -21,7 +21,7 @@ export default function Creator() {
         >
           heynick.cl
         </a>
-        . 2022
+        . 2023
       </p>
     </section>
   );
